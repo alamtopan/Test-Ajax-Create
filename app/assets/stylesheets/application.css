@@ -1,0 +1,19 @@
+.border-width{
+  border: solid 1px #ccc;
+  width: 400px;
+  padding: 10px;
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+ul li{
+  background: #f5f5f5;
+  padding: 10px;
+}
+.product-success label{
+  width: 100%;
+  padding: 10px;
+  background: green;
+  color: #fff;
+}

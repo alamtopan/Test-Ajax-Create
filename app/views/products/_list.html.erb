@@ -1,0 +1,11 @@
+<ul>
+  <% Product.latest.each_with_index do |p, index| %>
+    <li>
+      <%= index+1 %>.<%= p.title %>
+      <br>
+      <% p.images.each do |img| %>
+        <%= image_tag img.file.url, style: 'width: 50px;' %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

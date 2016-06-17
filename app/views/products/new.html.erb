@@ -1,0 +1,18 @@
+<div class='border-width'>
+  <div class='product'>
+    <%= form_for @product, remote: true, authenticity_token: true, method: 'post' do |f| %>
+      <%= f.text_field :title %>
+      <hr>
+      <%= f.fields_for :images do |img| %>
+        <%= img.file_field :file %>
+      <% end %>
+      <hr>
+      <%= submit_tag :save %>
+    <% end %>
+  </div>
+  <br>
+  <div class='product-success'></div>
+  <div class='list'>
+    <%= render 'list' %>
+  </div>
+</div>
