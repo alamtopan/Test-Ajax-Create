@@ -12,5 +12,19 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+
+// PROSES AJAX MANUAL
+// $(document).ready(function() {
+//   $('.submit-product').submit(function(event) {
+//     event.preventDefault();
+//     $.ajax({
+//       type: "post",
+//       url: $(this).attr('action'),
+//       data: $(this).serialize(),
+//       dataType: 'json',
+//       success:function(data) {
+//         window.location.href = data.location;
+//       }
+//     })
+//   });
+// });
